@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "@extension-js/javascript",
+  "description": "JavaScript-based extension template",
+  "version": "3.0.0",
+  "license": "MIT",
+  "type": "module",
+  "author": {
+    "name": "Ethan",
+    "email": "provisional.anonymous@gmail.com",
+    "url": "https://playlistshuffle.online/"
+  },
+  "scripts": {
+    "dev": "rm -rf src/dist && extension dev",
+    "start": "rm -rf src/dist && extension start",
+    "build": "rm -rf src/dist && extension build --browser=all"
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.12.0"
+  },
+  "devDependencies": {
+    "extension": "^2.1.3"
+  }
+}

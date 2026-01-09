@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest.json",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "TubeDice",
+  "description": "TubeDice is the best YouTube playlist randomizer right now.",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "action": {
+    "default_icon": {"48": "images/icon.png"}
+  },
+  "background": {
+    "chromium:service_worker": "background.js",
+    "firefox:scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content/scripts.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
