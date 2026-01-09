@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/chrome-manifest.json",
   "manifest_version": 3,
   "version": "1.0.0",
-  "name": "TubeDice",
+  "name": "TubeDice-YouTube playlist randomizer",
   "description": "TubeDice is the best YouTube playlist randomizer right now.",
   "icons": {
     "16": "images/icon.png",
